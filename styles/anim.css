@@ -47,6 +47,16 @@
 		transform:rotate(360deg);
 	}
 }
-
-
+/* .grid-about-item > img { */
+    /* animation-name: img-m; */
+    /* animation-duration: 5s; */
+    /* animation-timing-function: ease-in-out; */
+    /* animation-iteration-count: infinite; */
+    /* animation-direction: alternate; */
+/* } */
+/* @keyframes img-m{ */
+	/* to{ */
+		/* transform:scale(1.4) */
+	/* } */
+/* } */
 

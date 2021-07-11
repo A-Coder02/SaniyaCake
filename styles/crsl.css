@@ -33,18 +33,26 @@
 	transition:1s;
 }
 
+.flickity-enabled {
+    position: relative;
+    overflow: visible!important;
+}
 .carousel-cell img {
     width: 275px;
     height: 100%;
 	position: relative;
 	transition:1s;
 	left:0;
+	top:0;
 }
 .carousel-cell:hover img	 {
     transform: scale(2);
-   
-    left: -25%;
+	top:25%;
+    left: -35%;
 }
+ .carousel-cell:hover .cake-info{
+	 height:250px;
+ }
   /* cell number */
   .carousel-cell:before {
     display: block;
@@ -59,4 +67,15 @@
     background: rebeccapurple;
     background: var(--p-clr);
     /* background: white; */
+    /* overflow: hidden; */
+	
+	/* that will in rep */
+}
+.flickity-page-dots .dot {
+    width: 10%!important;
+    border-radius: 1vw!important;
+    height: 10px!important;
+    padding: 0!important;
+    background: #ffffff!important;
+    opacity: 0.10!important;
 }
