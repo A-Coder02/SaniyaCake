@@ -375,7 +375,7 @@ svg.waves path {
 .fixed-bg-item p {
     writing-mode: vertical-rl;
     text-orientation: mixed;
-    font-size: 2.6rem;
+    font-size: 2rem;
     color: var(--p-clr);
     word-spacing: 18px;
 }
