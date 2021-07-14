@@ -59,4 +59,61 @@
 		/* transform:scale(1.4) */
 	/* } */
 /* } */
+.intro-profile::before {
+    animation-name: rto;
+    animation-duration: 2s;
+    animation-timing-function: cubic-bezier(0.78, -0.28, 0.15, 1.29);
+    animation-direction: alternate-reverse;
+    animation-iteration-count: 1;
+}
+@keyframes rto{
+	to{
+		
+		top:100%
+	}
+}
 
+.intro-profile::after {
+    animation-name: rto2;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate-reverse;
+	    animation-timing-function: cubic-bezier(0.78, -0.28, 0.15, 1.29);	
+    animation-iteration-count: 1;
+}
+@keyframes rto2{
+	to{
+		
+		bottom:100%
+	}
+}
+.ast {
+    animation-name: ast;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate-reverse;
+    animation-timing-function: cubic-bezier(0.78, -0.28, 0.15, 1.29);
+    animation-iteration-count: infinite;
+    background: repeating-linear-gradient(90deg, #ff065a47, #e91e63bd 10px);
+	background-position:0 0;
+}
+@keyframes ast{
+	to{
+		
+		background-position:0 100%;
+	}
+}
+
+.cake-modal-img {
+    animation-name: m-img;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes m-img{
+	to{
+		
+		transform:scale(1.4)rotate(4deg);
+	}
+}

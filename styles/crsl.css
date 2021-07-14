@@ -67,7 +67,8 @@
     background: rebeccapurple;
     background: var(--p-clr);
     /* background: white; */
-    /* overflow: hidden; */
+     overflow-x: visible;
+     overflow-y: visible;
 	
 	/* that will in rep */
 }
@@ -80,3 +81,39 @@
     opacity: 0.10!important;
 	display:none!important;
 }
+
+
+.carousel-cell.is-selected{transition:0.7s;}
+.carousel-cell.is-selected::after {
+    position: absolute;
+    content: '';
+    background: radial-gradient(var(--p-clr) 50%, white 50%);
+    height: 700px;
+    width: 700px;
+    z-index: -1;
+    border-radius: 50%;
+    transition: 0.7s;
+    transform: scale(0);
+}
+/* .carousel-cell.is-selected:hover::after{ */
+	/* transform:scale(2); */
+	/* animation-name: img; */
+    /* animation-duration: 0.9s; */
+    /* /* animation-delay:calc( var(--anim-time) - 1 ); */ */
+    /* animation-fill-mode: forwards; */
+	/* opacity:0; */
+/* } */
+/* @keyframes img{ */
+	/* 0%{ */
+		/* opacity:0.5; */
+		/* transform:scale(0); */
+	/* } */
+	/* 50%{ */
+		/* opacity:1; */
+		/* transform:scale(5); */
+	/* } */
+	/* 100%{ */
+		/* opacity:0; */
+		/* transform:scale(5); */
+	/* } */
+/* } */

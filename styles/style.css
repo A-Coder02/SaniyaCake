@@ -6,6 +6,10 @@
 	object-fit:cover;
 	background-size: cover;
 }
+*::selection{
+	background:var(--p-clr);
+	
+}
 body {
     font-size: 1rem;
     color: black;
@@ -22,6 +26,127 @@ ul,li,a,p{padding:0.5rem;}
 	--p-clr : #e91e63;
 	--s-clr : #2196f3;
 	scroll-behavior:smooth;
+	
+}
+:focus{outline:none;}
+.modal {
+    padding: 1rem;
+    text-align: center;
+    transition: 0.3s;
+	
+    transition-timing-function: ease-in-out;
+    position: fixed;
+    height: 400px;
+    width: 700px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%)scale(0);
+    z-index: 30;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 3px 4px 15px #00000078, 2px 2px 7px #2196f32e inset, 0px 0px 10px 2px #726f6f1a inset;
+}
+.overlay {
+    width: 100vw;
+    content: "";
+    height: 100vh;
+    background: #1e0c12b5;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 29;
+    mix-blend-mode: multiply;
+}
+.overlay:fter {
+    width: 100vw;
+    content: "";
+    height: 100vh;
+    background: radial-gradient(at 100% -70% ,black 40%, transparent 60%);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 29;
+    /* backdrop-filter: blur(2px); */
+}
+.overlay:efore {
+    width: 100vw;
+    content: "";
+    height: 100vh;
+    background: radial-gradient(at 0% 70% ,black 40%, transparent 60%);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 29;
+    /* backdrop-filter: blur(2px); */
+}
+.hidden{
+	display:none
+}
+.close-modal {
+  /* background:pink; */
+  transform: translate(-50%, -50%)scale(0.0);
+}
+.show-modal{
+	  /* background:gray; */
+	   
+	 transform: translate(-50%, -50%)scale(1);
+}
+.cake-modal-img {
+    height: 350px;
+    position: relative;
+    left: -110px;
+    top: 0;
+    transform: scale(1.5);
+    transition: 2s;
+}
+.modalClose{
+	text-decoration:underline;
+	position:absolute;
+	right:0;
+	top:0;
+	margin:1rem;
+	cursor:pointer;
+}
+header.cake-modal-name {
+    color: var(--p-clr);
+    font-size: 2.4rem;
+}
+.cake-modal-info-dp {
+    color: darkslategray;
+}
+form.order-form {
+    padding: 1rem;
+    border: 8px pink double;
+    border-radius: 20px;
+    background: var(--p-clr);
+    color: white;
+    box-shadow: 0 0 0.5rem #00000057;
+}
+main.cake-modal-info {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-between;
+}
+.cake-modal-info-d {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+label.order-label {
+    padding: 0.5rem;
+    display: block;
+}
+.order-input {
+    width: 100%;
+    padding: 0.4rem;
+    border-radius: 10px;
+    border-color: var(--p-clr);
+    border-style: dashed;
+	font-family: 'Berkshire Swash', cursive;
+	text-align:center;
 }
 
 .logo {
@@ -73,6 +198,11 @@ ul.nav-link-wrapper li:hover{
 	color: var(--s-clr);
 }
 ul.nav-link-wrapper li:hover::after {
+    content: "fssfddfs";
+    top: -150%;
+    left: -23%;
+}
+ul.nav-link-wrapper li:a::after {
     content: "fssfddfs";
     top: -150%;
     left: -23%;
@@ -352,11 +482,15 @@ svg.waves path {
 .font-i2 {
     font-size: 7.5rem;
     color: var(--s-clr);
+    color: white;
 }
 
-
-
-
+.trc {
+    border-radius: 0 2rem 0 0;
+}
+.tlc {
+    border-radius:2rem 0 0 0;
+}
 
 
 .fixed-bg {
@@ -375,7 +509,7 @@ svg.waves path {
 .fixed-bg-item p {
     writing-mode: vertical-rl;
     text-orientation: mixed;
-    font-size: 2rem;
+    font-size: 2.6rem;
     color: var(--p-clr);
     word-spacing: 18px;
 }
