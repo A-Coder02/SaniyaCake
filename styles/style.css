@@ -116,7 +116,7 @@ header.cake-modal-name {
 }
 form.order-form {
     padding: 1rem;
-    border: 8px pink double;
+    /* border: 8px pink double; */
     border-radius: 20px;
     background: var(--p-clr);
     color: white;
