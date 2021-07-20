@@ -37,7 +37,7 @@ ul,li,a,p{padding:0.5rem;}
     transition-timing-function: ease-in-out;
     position: fixed;
     height: 400px;
-    width: 700px;
+    width: 850px;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%)scale(0);
@@ -93,11 +93,20 @@ ul,li,a,p{padding:0.5rem;}
 }
 .cake-modal-img {
     height: 350px;
+    /* width: 350px; */
     position: relative;
     left: -110px;
     top: 0;
     transform: scale(1.5);
     transition: 2s;
+}
+span.modal-cake-price {
+    font-size: 1.2em;
+    color: var(--s-clr);
+}
+
+.modal .btn:hover{
+	color:white;
 }
 .modalClose{
 	text-decoration:underline;
@@ -314,6 +323,10 @@ img.intro-content-img {
 .carousel-cell > p{
 	padding:1rem;
 }
+.cake-modal-img{
+	border-radius:10%;
+	
+}
 .cake-b {
     text-align: center;
     margin: 1rem;
@@ -327,7 +340,7 @@ img.intro-content-img {
     right: -25%;
 }
 .cake-b > p{padding:1rem;}
-.cake-crl-name {
+.cake-crl-name1 {
     text-transform: uppercase;
     background: white;
     margin: 0.5rem;
