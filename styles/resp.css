@@ -36,6 +36,12 @@ header.about-header {
     border-radius: 0;
     background:var(--p-clr);
 }
+header.cake-modal-name {
+    color: var(--p-clr);
+    font-size: 2.4rem;
+    position: relative;
+    z-index: 0;
+}
 .cake-flickity-wrapper{
 	overflow:hidden;
 }
