@@ -71,8 +71,8 @@ OrderB.addEventListener('click', function(){
 	let Banner = document.querySelector('.banner');
 	let BannerAdd = Banner.src;
 	console.log(BannerAdd);
-  let url = "https://wa.me/919145338722?text=" 
-    ; 
+  let url = "https://wa.me/919145338722?text="; 
+	
 	let FinalURL = url + `Hey Saniya, %0a %0a I'm *${name}*. %0a I Want Delicious *${Cakew}(Price: *${Cakep}*)! %0a At *${address}*. %0a`;
 	console.log(FinalURL);
 	if(name&&number&&address){

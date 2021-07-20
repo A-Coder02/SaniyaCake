@@ -1,5 +1,10 @@
 
 @media screen and (max-width: 50rem) {
+	ul.nav-link-wrapper {
+    list-style: none;
+    display: inline-flex;
+    padding: 0 0.4rem;
+}
 main.cake-modal-info {
     display: flex;
     flex-direction: column;
@@ -29,6 +34,7 @@ header.about-header {
 .intro-item.intro-content-wrapper {
     height: 90vh;
     border-radius: 0;
+    background: linear-gradient(50deg, #ffc3ea, transparent);
 }
 .cake-flickity-wrapper{
 	overflow:hidden;
@@ -49,7 +55,16 @@ div#page-21 {
     transition: 0.4s;
 }
 .grid-cake-item div {
-    bottom: 0%;
+    display: flex;
+    font-size: 2.5rem;
+    flex-direction: row;
+    height: 50%;
+    padding: 1rem;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    bottom: 0;
 }
 .arrow-right::before,
 .arrow-left::before{
