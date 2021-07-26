@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Qahiri&display=swap');
 *,*::after,*::before {
 	margin:0;
 	padding:0;
@@ -46,12 +47,7 @@ ul,li,a,p{padding:0.5rem;}
     border-radius: 20px;
     box-shadow: 3px 4px 15px #00000078, 2px 2px 7px #2196f32e inset, 0px 0px 10px 2px #726f6f1a inset;
 }
-header.cake-modal-name {
-    color: var(--p-clr);
-    font-size: 2.4rem;
-    position: relative;
-    z-index: 0;
-}
+
 .overlay {
     width: 100vw;
     content: "";
